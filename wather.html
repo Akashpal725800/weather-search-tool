@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wather</title>
+    <link rel="stylesheet" href="wather.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<body>
+        <div class="container">
+
+          <div class="search-box">
+                <input type="text" placeholder="Enter your location " class="input-box">
+                <button class="fa-solid fa-magnifying-glass"
+                 id="searchBt"></button>
+          </div>
+          <div id="image">
+            <img src="cloud.jpg" alt="cloud image" id="cloud">
+                <p class="temprature">0 <sup>°C</sup></p>
+                <p class="description">Lingt Rain</p>
+            </div>
+  
+<div class="second">
+    <h2>Temperature Converter</h2>
+   <div class="input-group">
+  <label>Celsius:</label>
+  <input type="number" id="celsius" placeholder="Enter Temperature">
+</div>
+
+<div class="input-group">
+  <label>Fahrenheit:</label>
+  <input type="number" id="fahrenheit" readonly>
+</div>
+
+<div class="input-group">
+  <label>Kelvin:</label>
+  <input type="number" id="kelvin"readonly>
+</div>
+<!--<button id="search" onclick="convertTemperature">search</button>-->
+<p id="search" onclick="convertTemperature"></p>
+<p id="error1"></p>
+</div>
+</div>
+
+<script src="wather.js"></script>
+
+</body>
+</html>
